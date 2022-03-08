@@ -3,6 +3,7 @@ const dateFormat = require('../utils/dateFormat');
 
 const ReplySchema = new Schema(
     {
+        // set custom id to avoid confusion with parent comment _id
         replyId: {
             type: Schema.Types.ObjectId,
             default: () => new Types.ObjectId()
